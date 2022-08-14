@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaverton Foods-America's Finest Gourment Condiments sInce 1929</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- customcss -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="upperbar text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 align-items-center p-2">
+                    <span class="shipfree">Use code SHIPFREE on orders over $39.99!</span>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <button class="btn mycardbtn">
+                        <span class="mycard">My Card</span>
+                        <span class="item-list mx-3">0</span>
+                    </button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- upperbar menu wala -->
+    <nav id="navbar" class="navbar d-flex navbar-expand-md bg-light py-sm-4">
+        <div class="container d-flex justify-content-between">
+        <div class="logo">
+            <img class="nav-logo" src="logo.png" width="300px" alt="">
+        </div>
+          
+        <div class="list ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"> <span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> <span>About</span> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="history.html"><span>History</span></a>
+                </li>
+                <li class="nav-item shop-main">
+                    <a class="nav-link" href="shop.html"><span>shop</span></a>
+                    <ul class="shop-submenu">
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">Award winning</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">Breavern brand</a>
+                        </li><li class="submenu-item">
+                            <a class="submenu-link" href="">Inglehoffer</a>
+                        </li><li class="submenu-item">
+                            <a class="submenu-link" href="">Napa valley</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">pacific farms</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">tulelake</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">apparel</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resipes.html"><span>resipes</span></a>
+                  </li>
+                  <li class="nav-item career-main">
+                    <a class="nav-link" href="careers.html"><span>careers</span></a>
+                    <ul class="career-submenu">
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">Assistant mixer</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-link" href="">production associate</a>
+                        </li><li class="submenu-ite">
+                            <a class="submenu-link" href="">warehouse associate</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="contact.html"><span>contact</span></a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item">
+                        <button class="btn search-btn sjs">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="btn shopnow-btn">
+                            Shop now
+                        </button>
+                      </li>
+                  </li>
+              </ul>
+
+        </div>
+        <div class="smallscreen d-none">
+            <button class="btn search-btn sjs2 p-1 ">
+                <i class="fa-solid p-0 fa-magnifying-glass"></i>
+            </button>
+            <button class="btn card-btn p-1">
+                <i class="fa-solid fa-cart-shopping"><span class="cardcar-no">0</span></i>
+            </button>
+            <button class="btn-togg btn p-1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- mainnavend -->
+
+<div class="sidenavmain">
+    <button class="btn close-btn">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="sidenav">
+        <ul>
+            <li class="sidenav-item"><a class="sidenav-link" href="">home</a>
+                
+            </li>
+            <li class="sidenav-item"><a class="sidenav-link"  href="">about</a></li>
+            <li class="sidenav-item"><a class="sidenav-link"   href="">history</a></li>
+            <li class="sidenav-item d-flex justify-content-between"><a class="sidenav-link"  href="">shop</a>
+                <button id="shopmenu-togg" class="btn menu-togg  ">
+                    <i class="fa-solid fa-angle-up"></i>
+                </button>
+            </li>
+            <ul id="shopsidemenu">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">Award winning</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">Breavern brand</a>
+                    </li><li class="submenu-item">
+                        <a class="submenu-link" href="">Inglehoffer</a>
+                    </li><li class="submenu-item">
+                        <a class="submenu-link" href="">Napa valley</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">pacific farms</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">tulelake</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">apparel</a>
+                    </li>
+            </ul>
+            <li class="sidenav-item"><a class="sidenav-link"  href="">recipes</a>
+            </li>
+            <li class="sidenav-item d-flex justify-content-between"><a class="sidenav-link"  href="">carrers</a>
+                <button id="carrermenu-togg" class="btn menu-togg  ">
+                    <i class="fa-solid fa-angle-up"></i>
+                </button></li>
+                <ul id="carrer-sideme">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">Assistant mixer</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">production associate</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="">warehouse associate</a>
+                    </li>
+                </ul>
+            <li class="sidenav-item"><a class="sidenav-link"  href="">contact</a></li>
+        </ul>
+
+
+        <div class="searchside">
+            <input type="text" class="side-search" placeholder="Search">
+            <button class="sidesearch-btn">
+                <i class="fa-solid fa-magnifying-glass">
+                 </i>
+            </button>
+        </div>
+        <div class="sidelinks">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-google"></i>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<!-- search bar -->
+<section class="searcharea">
+    <div class="search-display">
+        <div class="search-item">
+            <span class="searchcard-item">0</span>
+        </div>
+        <div class="searchbar">
+            <button class="btn searchnbtn-dis">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input class="searchinput" type="text" placeholder="Search">
+            <button class="btn closesearch-dis">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    
+</section>
+
+<!-- navbarend -->
+
+<!-- about -->
+<section id="about">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="top-heading">Beaverton Foods</h1>
+                <p class="lower-heading"> AMERICA'S FINEST GOURMET CONDIMENTS SINCE 1929</p>
+                <div class="about-des mt-md-4 px-md-2">
+                    In 1929 Rose Biggi started Beaverton Foods in the cellar of her farmhouse. To help endure the Great Depression, she began grinding her horseradish crop, bottling it, and selling it to local grocery stores. Through her hard work and perseverance, she not only survived the hard economic times, but also built the foundation for the largest specialty condiment manufacturer in the United States.
+                </div>
+                <button class="btn history-btn">Our history</button>
+            </div>
+            <div class="col-md-6 d-flex align-items-center about-pic">
+                <img src="pics/about.png" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+<!-- featured products -->
+<section id="feat-product">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="top-heading">Featured Products</h1>
+                <p class="lower-heading"> OUR FAVORITES</p>
+                
+            </div>
+            <div class="row d-flex justify-content-between ">
+                <div class="col-md-2 col-6">
+                    <div class="product-pic border">
+                        <a href="#"><img src="pics/products/1p.png" alt="error" class="img-fluid"></a>
+                        
+                    </div>
+                    <div class="product-title mt-2">
+                        <a href="#">Beaver Brand <br> Stone Ground 
+                        <br> Mustard</a>
+                    </div>
+                    <div class="product-price">
+                        <p> $4.29</p>
+                    </div>
+                    <div class="product-button d-flex justify-content-center">
+                        <button class="btn">View product</button>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="product-pic border">
+                        <a href="#"><img src="pics/products/2p.png" alt="error" class="img-fluid"></a>
+                        
+                    </div>
+                    <div class="product-title mt-2">
+                        <a href="#">Beaver Brand <br> Sweet Hot
+                            <br> Mustard</a>
+                    </div>
+                    <div class="product-price">
+                        <p> $4.29</p>
+                    </div>
+                    <div class="product-button d-flex justify-content-center">
+                        <button class="btn">View product</button>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mt-sm-3 mt-md-0">
+                    <div class="product-pic border">
+                        <a href="#"><img src="pics/products/3p.png" alt="error" class="img-fluid"></a>
+                        
+                    </div>
+                    <div class="product-title mt-2">
+                        <a href="#">Beaver Brand <br> Honey <br>
+                        Mustard </a>
+                        <br>
+                    </div>
+                    <div class="product-price">
+                        <p> $4.29</p>
+                    </div>
+                    <div class="product-button d-flex justify-content-center">
+                        <button class="btn">View product</button>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mt-sm-3 mt-md-0">
+                    <div class="product-pic border">
+                        <a href="#"><img src="pics/products/5p.png" alt="error" class="img-fluid"></a>
+                        
+                    </div>
+                    <div class="product-title mt-2">
+                        <a href="#">Beaver Brand <br> Cream  Style
+                            <br> Horseradish</a>
+                    </div>
+                    <div class="product-price">
+                        <p> $4.29</p>
+                    </div>
+                    <div class="product-button d-flex justify-content-center">
+                        <button class="btn">View product</button>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mt-sm-3 mt-md-0">
+                    <div class="product-pic border">
+                        <a href="#"><img src="pics/products/4p.png" alt="error" class="img-fluid"></a>
+                        
+                    </div>
+                    <div class="product-title mt-2">
+                        <a href="#">Beaver Brand <br> Deli <br> Mustard </a>
+                    </div>
+                    <div class="product-price">
+                        <p> $4.29</p>
+                    </div>
+                    <div class="product-button d-flex justify-content-center">
+                        <button class="btn">View product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+<!-- shop brand banner -->
+<div class="container-fluid shop-banner my-5 p-0">
+    <a href="#"><img src="pics/shopbrand.jpg" class="img-fluid" alt=""></a>
+</div>
+
+<!-- explose recipes -->
+<div class="container mt-5 mt-md-0 mb-5">
+    <div class="row ">
+        <div class="col-md-12 col-sm-12">
+            <h1 class="top-heading">Explore Recipes</h1>
+            <p class="lower-heading"> Get cookin'</p>
+            
+        </div>
+    </div>
+    <div class="row d-flex justify-content-around">
+        <div class=" col-md-3 mb-md-0 mb-3 col-10 recipe-box p-4 ">
+            <div class="respi-img">
+                <img src="pics/recipe/1.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="recpi-head mt-3">
+                Beaver Brand Extra Hot Bloody Mary
+            </div>
+            <div class="respi-low-head my-1 mb-4">
+                <i>Beaver Brand</i>
+            </div>
+            <p class="recpi-des">
+                We recommend adding at least 1 tbsp of Beaver Brand Extra Hot Horseradish to your favorite bloody mary mix. Increase if you dare!
+            </p>
+            <a href="" class="view-recpi">view recipes <i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3  col-10 recipe-box p-4 ">
+            <div class="respi-img">
+                <img src="pics/recipe/2.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="recpi-head mt-3">
+                Inglehoffer Sweet Hot Mustard Crab Cakes
+            </div>
+            <div class="respi-low-head my-1 mb-4">
+                <i>Inglehoffer</i>
+            </div>
+            <p class="recpi-des">
+                Get fancy by plating these homemade, better-than-store-bought-could-ever-be crab cakes on a frisée salad with vinaigrette.
+            </p>
+            <a href="" class="view-recpi">view recipes <i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3  col-10 recipe-box p-4 ">
+            <div class="respi-img">
+                <img src="pics/recipe/3.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="recpi-head mt-3">
+                Inglehoffer Mustard Parmesan Crusted Filet Mignon & Horseradish Potato Puree
+            </div>
+            <div class="respi-low-head my-1 mb-4">
+                <i>Inglehoffer</i>
+            </div>
+            <p class="recpi-des">
+                Classic meat and potatoes – taken up several notches! This crusted filet recipe is bursting with flavor from all angles.
+            </p>
+            <a href="" class="view-recpi">view recipes <i class="fa-solid fa-xmark"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- footer start -->
+
+<footer>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+        <div class="col-sm-4 col-md-4 p-2 ">
+            <div class="footerlogo">
+                <img src="logo.png" alt="" >
+
+            </div>
+            <p class="footer-des">In 1929 Rose Biggi began Beaverton Foods by bottling horseradish in the cellar of her farmhouse to help her family endure the Great Depression. Such humble beginnings have given way to America's favorite specialty condiment company</p>
+        </div>
+        <div class="col-sm-4 col-md-4 p-2 getintouch">
+            <span class="f-midheader">
+                Get in touch
+            </span>
+            <div class="location d-flex mt-4">
+                <i class="fa-solid fa-map-location-dot f-icon"></i>
+                <p class="des">7100 NE Century Blvd <br>
+                    Hillsboro, OR 97124</p>
+            </div>
+            <div class="f-mail d-flex">
+                <i class="fa-solid fa-envelope f-icon"></i>
+                
+                <p class="des"><a href="nfo@beavertonfoods.com">info@beavertonfoods.com</a></p>
+                
+            </div>
+            <div class="f-call d-flex">
+                <p class="des">	
+                    <i class="fa-solid fa-phone f-icon"></i>
+                    <a href="tel:(503) 646-8138">(503) 646-8138</a></p>
+
+            </div>
+            <div class="flink mx-md-3">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-google"></i>
+            </a>
+            </div>
+
+        </div>
+        
+        <div class="col-sm-4 col-md-4 p-2 getintouch d-flex flex-column ">
+           
+           <span class="f-midheader">
+            STAY TUNED WITH UPDATES
+           </span>
+        <input type="email" placeholder="Email" class="f-email" required>
+        
+            <button class="btn f-submit">Submit info</button>
+        </div>
+    </div>
+</div>
+<div class="footerbar">
+    <div class="container ">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center
+        justify-content-lg-start
+        ">
+            <p class="f-l-text">Created by <a class="fel" href="">The Gorilla Agency</a> </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center justify-content-lg-end">
+            <p class="f-l-text">
+                <a class="fel" href="">Carrers</a>
+                | 
+                <a  class="fel"href="">Terms</a> | 
+                <a class="fel" href="">Accessbility</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</footer>
+
+
+    <!-- bootstrapjs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- customjs -->
+    <script src="sccript.js"></script>
+</body>
+</html>
