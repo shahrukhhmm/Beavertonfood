@@ -754,7 +754,6 @@ color: white;
 /* recipes */
 .recipe-box{
     background-color:var(--recipe-color);
-    height: 90vh;
 }
 .recpi-head{
     color: var(--primary-color);
@@ -789,7 +788,6 @@ color: white;
 @media only screen and (max-width:991px){
     .recipe-box{
         background-color:var(--recipe-color);
-        height: 90vh;
     }
     .recpi-head{
         font-size: 1.2rem;
